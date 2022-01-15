@@ -1,116 +1,57 @@
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
+
+/* common class  */
+
 .container {
   width: 85%;
   margin: 0 auto;
-  /* background-color: blueviolet; */
-}
-.center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-h2 {
-  font-family: Poppins;
-  font-size: 52px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin: 0;
-}
-h3 {
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0px;
-  text-align: left;
-}
-p {
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-bottom: 32px;
-}
-.main-button {
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  text-decoration: none;
-  color: #ffffff;
-  transition: width 1s;
-  background-color: #e02c6d;
-  border-radius: 41px;
-  padding: 10px 24px;
-}
-.main-button:hover {
-  width: 300px;
-  transition: ease-in 2s;
-}
-.section-title {
-  text-align: center;
-}
-.my-container {
-  width: 1042px;
-  margin: 0 auto;
-}
-.collections {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid-item {
-  padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px 0px;
-  margin: 15px 12px;
-  border-radius: 5px;
-}
-.filled {
-  display: inline;
-  color: #fb8200;
 }
 
-.product-title {
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* navigation section style */
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 0;
+}
+.logo-heading {
   font-family: Poppins;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 40px;
-  color: #18191f;
-}
-.price {
-  font-family: Inter;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 36px;
+  color: #3a3a3a;
+  cursor: pointer;
 }
-.rating-num {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0.1px;
-  margin-left: 10px;
+.nav-menu {
+  display: grid;
+  justify-items: end;
+  margin: 0 -20px;
 }
-.collection-details {
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0.018em;
-  color: #787885;
-  margin: 10px 0 0 0;
-  padding: 0;
+
+.nav-menu ul li {
+  display: inline;
+  margin-right: 2em;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.nav-menu ul li a:hover {
+  text-decoration: none;
+  color: #e02c6d;
+}
+.fas.fa-cart-plus {
+  font-size: 1.5em;
+}
+
+.fas.fa-search {
+  font-size: 1.3em;
 }
