@@ -217,3 +217,123 @@ p {
   border-right: none;
   padding-left: 10px;
 }
+
+* Responsive section for mobile,table, Laptop */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .brand {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1,
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+  }
+  .btn-primary {
+    display: block;
+    text-align: center;
+    margin: 0 20%;
+  }
+  .newsletter {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+  }
+  .input-form-area input[type="email"] {
+    width: 95%;
+    border: 2px solid;
+    padding: 0px 0px 0px -5px;
+  }
+  .btn-sub {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .navigation {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav-menu {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .brand {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .hero-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .brand {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .hero-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+  }
+  .nav-menu {
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 1026px and up) */
+@media only screen and (min-width: 1026px) {
+  .hero-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter {
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+  }
+  h1,
+  h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+  }
+  h1,
+  h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+  }
+  .nav-menu {
+    text-align: none;
+  }
+}
